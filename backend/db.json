@@ -1,0 +1,28 @@
+{
+  "staff": [
+    {
+      "name": "Kis Ernő",
+      "role": "Vezetőedző",
+      "age": 55,
+      "nationality": "Magyar",
+      "experience": 20,
+      "id": 1
+    },
+    {
+      "name": "Nagy Ernő",
+      "role": "Másodedző",
+      "age": 50,
+      "nationality": "Magyar",
+      "experience": 15,
+      "id": 2
+    },
+    {
+      "name": "Kis Géza",
+      "role": "Pályaedző",
+      "age": 44,
+      "nationality": "Magyar ",
+      "experience": 10,
+      "id": 3
+    }
+  ]
+}

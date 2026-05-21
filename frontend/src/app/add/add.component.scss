@@ -1,0 +1,44 @@
+.page {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #071b12, #123524);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 560px;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgb(90, 68, 68);
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: #b1b3b2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: 34px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}

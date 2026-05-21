@@ -1,0 +1,34 @@
+<div class="page">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Focicsapat nyilvántartó</p>
+      <h1>Edzői stáb</h1>
+      <p class="subtitle">A csapat szakmai stábjának kezelése és listázása.</p>
+    </div>
+
+    <button mat-raised-button color="" routerLink="/add">
+      + Új stábtag
+    </button>
+  </header>
+
+  <section class="staff-grid">
+    <mat-card class="staff-card" *ngFor="let staff of staffMembers">
+      <mat-card-header>
+        <mat-card-title>{{ staff.name }}</mat-card-title>
+        <mat-card-subtitle>{{ staff.role }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p><strong>Életkor:</strong> {{ staff.age }} év</p>
+        <p><strong>Nemzetiség:</strong> {{ staff.nationality }}</p>
+        <p><strong>Tapasztalat:</strong> {{ staff.experience }} év</p>
+      </mat-card-content>
+
+      <mat-card-actions align="end">
+        <button mat-button color="warn" (click)="deleteStaff(staff.id)">
+          Törlés
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </section>
+</div>

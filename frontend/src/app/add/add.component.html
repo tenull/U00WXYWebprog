@@ -1,0 +1,46 @@
+<div class="page">
+  <section class="form-card">
+    <div class="header">
+      <p class="eyebrow">Focicsapat nyilvántartó</p>
+      <h1>Új stábtag hozzáadása</h1>
+      <p>Adj hozzá új edzőt vagy szakmai stábtagot a csapathoz.</p>
+    </div>
+
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="form">
+      <mat-form-field appearance="outline">
+        <mat-label>Név</mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Pozíció</mat-label>
+        <input matInput type="text" formControlName="role">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Életkor</mat-label>
+        <input matInput type="number" formControlName="age">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nemzetiség</mat-label>
+        <input matInput type="text" formControlName="nationality">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Tapasztalat / év</mat-label>
+        <input matInput type="number" formControlName="experience">
+      </mat-form-field>
+
+      <div class="actions">
+        <button mat-button type="button" routerLink="/">
+          Vissza
+        </button>
+
+        <button mat-raised-button color="" type="submit">
+          Hozzáadás
+        </button>
+      </div>
+    </form>
+  </section>
+</div>
